@@ -1,0 +1,15 @@
+.burger-button {
+    /*....*/
+    display: flex;
+    background-color: red;
+}
+
+
+@media (min-width: $tablet) {
+    .burger-button {
+        /*....*/
+        display: none;
+    }
+}
+
+
