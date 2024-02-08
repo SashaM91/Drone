@@ -1,0 +1,113 @@
+.section {
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/Rectangle2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.section-top-maine {
+  display: flex;
+  justify-content: center;
+  padding-top: 35px;
+}
+.section-top-maine .section-top {
+  width: 500px;
+  height: 300px;
+}
+.section-top-maine .section-img {
+  width: 500px;
+  height: 500px;
+  background-image: url(../img/red-dron.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.text-and-logo {
+  display: flex;
+  justify-content: center;
+}
+.text-and-logo .china-company {
+  width: 500px;
+  height: 300px;
+}
+.text-and-logo .china-company.logo {
+  background-image: url(../img/XAG-big-logo.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.six-block {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.block-text {
+  display: flex;
+  width: 700px;
+  height: 400px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.block-text .block {
+  display: flex;
+  width: 200px;
+  justify-content: center;
+}
+
+.economy-section {
+  background-image: url(../img/rectangle4.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+.economy-section .economy-content {
+  width: 500px;
+  height: 400px;
+  margin-top: 90px;
+}
+
+.h2-center {
+  text-align: center;
+}
+
+.elipse-block {
+  width: auto;
+  height: 800px;
+  background-image: url(../img/ellipse.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.elipse-block .elipse-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  gap: 40px;
+  width: 400px;
+}
+
+.div {
+  height: 200px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  gap: 400px;
+}
+.div--2 {
+  gap: 500px;
+  display: flex;
+}
+.div--2--3 {
+  gap: 500px;
+  display: flex;
+}/*# sourceMappingURL=styles-section.css.map */
