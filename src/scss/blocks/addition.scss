@@ -1,0 +1,42 @@
+.addition{
+    background: linear-gradient(90deg, #2A7AC0 0.61%, #68A6DC 100%);
+    width: 335px;
+    height: 621px;
+    margin-left: auto;
+    margin-right: auto;
+   
+    
+    &::after{
+        display: flex;
+        position: relative;
+        content: "";
+        transform: rotate(145grad);
+        background-color: #FFFFFF;
+        opacity: 10%;
+        width: 288px;
+        height: 288px;
+        right: 55px;
+        bottom: 370px; 
+    }
+    &::before{
+        display: flex;
+        position: relative;
+        content: "";
+        transform: rotate(145grad);
+        background-color: #FFFFFF;
+        opacity: 20%;
+        width: 148px;
+        height: 148px;
+        left: 10px; 
+        top: 90px;
+        
+    }
+   &__banner{
+    background-image: url("../../img/black-drone.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 15% 75%;
+    width: 345px;
+    height: 621px;
+   }
+}

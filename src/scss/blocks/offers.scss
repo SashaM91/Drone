@@ -1,0 +1,31 @@
+.offers{
+    padding-top: 60px;
+    background-image: url(../../img/rectangle5.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+   
+    
+    &__part{
+        width: 330px;
+        height:292px;
+        background-color: #FFFFFF;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }    
+    &--first-offer{
+        background-image: url(../../img/drone-2.svg);
+        background-repeat: no-repeat;
+    }
+    &--blue-download-price{
+        background-image: url(../../img/rectangle-blue.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 300px;
+        width: 330px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
