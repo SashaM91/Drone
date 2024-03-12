@@ -1,0 +1,29 @@
+.title {
+    font-family: "Roboto";
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0em;
+    margin: 0;
+
+    &--bold {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    &--center {
+        text-align: center;
+        &--red-drone{
+            margin-top: 20px;
+            margin-bottom: 30px;
+            height: 290px;
+            background-image: url(../../img/red-dron.png);
+            background-size: 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position: 50%;
+        }
+    }
+  
+}

@@ -1,0 +1,37 @@
+.list{
+    margin-right: 15px;
+    
+    &--numbers{
+        list-style-type: none;
+        padding: 20px 20px 0 20px;
+        list-style-position:inside;
+        border: 1px solid #E0E0E0;
+        height: 185px;
+    }
+    &--marker{
+        list-style: none;
+    }
+    &--marker::before{
+        display: flex;
+        position: absolute;
+        content: "";
+        transform: rotate(43grad);
+        background-color: #2A7AC0;
+        width: 8.75px;
+        height: 8.75px;
+        left: 15px;
+        opacity: 0.3;
+        
+    }
+    // &--marker::marker{
+    //     display: flex;
+    //     position: absolute;
+    //     content: "";
+    //     width: 4px;
+    //     height: 4px;
+    //     left: 15px;
+    //     transform: rotate(41grad);
+    //     background-color: #2A7AC0;
+    //     top: 6px;
+    // }
+}
