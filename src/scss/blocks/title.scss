@@ -14,16 +14,10 @@
 
     &--center {
         text-align: center;
-        &--red-drone{
-            margin-top: 20px;
-            margin-bottom: 30px;
-            height: 290px;
-            background-image: url(../../img/red-dron.png);
-            background-size: 50%;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-position: 50%;
-        }
+    }    
+    &--left{
+        text-align: left;
+        padding-left: 10px;
     }
-  
 }
+  
