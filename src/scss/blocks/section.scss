@@ -1,5 +1,33 @@
 .section{
+    &--saving{
+        background-image: url("../../img/rectangle5.png");
+        background-repeat: no-repeat;
+        padding-bottom: 200px;
+        padding-top: 100px;
+        background-position: center;
+        background-size: 100%;
+    }
+    &__padding{
+        padding-bottom: 50px;
+    }
     &__wrapper{
+        &--advantage{
+            background-image: url('../../img/ellipse.png');
+            background-size: 60%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position: 50% 20%;
+            &--red-drone-prof{
+                background-image: url(../../img/red-drone-prof.png);
+                background-size: 80%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-position: 80% 60%;
+                padding-bottom: 24px;  
+                width: 342px;
+                height: 400px;
+            }
+        }   
         &--hag{
             background-image: url("../../img/rectangle1.png");
             background-size: 100%;
@@ -30,7 +58,7 @@
             }
             }    
         
-        }    
-        }
-        }
+        } 
+    }
+    }
     
