@@ -1,9 +1,14 @@
 .addition{
     background: linear-gradient(90deg, #2A7AC0 0.61%, #68A6DC 100%);
+    position: relative;
     width: 335px;
     height: 621px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 100px;
+    &__bg{
+        background-image: none;
+    }
    
     
     &::after{
@@ -16,7 +21,7 @@
         width: 288px;
         height: 288px;
         right: 55px;
-        bottom: 730px; 
+        bottom: 650px; 
     }
     &::before{
         display: flex;
@@ -37,6 +42,6 @@
     background-repeat: no-repeat;
     background-position: 15% 75%;
     width: 345px;
-    height: 321px;
+    height: 295px;
    }
 }
