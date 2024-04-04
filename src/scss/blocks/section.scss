@@ -29,20 +29,32 @@
             }
         }   
         &--hag{
-            background-image: url("../../img/rectangle1.png");
-            background-size: 100%;
-            background-repeat: no-repeat;
+                background-image: url("../../img/rectangle1.png");
+                background-size: 100%;
+                background-repeat: no-repeat;
             &--red-drone{
-            padding-top: 72px;
-            margin-bottom: 30px;
-            height: 290px;
-            background-image: url(../../img/red-dron.png);
-            background-size: 80%;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-position: 70% 95%;
-            padding-bottom: 24px;
-            &:after{
+                padding-top: 72px;
+                margin-bottom: 30px;
+                height: 290px;
+                background-image: url(../../img/red-dron.png);
+                background-size: 80%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-position: 70% 95%;
+                padding-bottom: 24px;
+                }
+            &--black-drone{
+                background-image: url(../../img/black-drone-prof.png);
+                background-size: 80%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-position: 80% 60%;
+                padding-bottom: 24px;  
+                // width: 242px;
+                height: 400px;
+                
+            }
+            &--red-drone:after{
                 position: absolute;
                 content: 'xag';
                 font-family: "Roboto", sans-serif;
@@ -56,9 +68,26 @@
                 top: 490px;
                 left: 175px;
             }
+            &--black-drone:after{
+                position: absolute;
+                content: 'dji';
+                font-family: "Roboto", sans-serif;
+                font-size: 96px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 112px;
+                text-transform: uppercase;
+                z-index: -1;
+                color: #F2F2F2;
+                top: 690px;
+                left: 145px;
+            }
+            
+            
+        }
+            
             }    
         
         } 
-    }
-    }
+    
     
