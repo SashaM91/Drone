@@ -7,6 +7,10 @@
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
+    
+}
+@media screen and (min-width:1000px) {
+    .button{
     &-header{
         width: 120px;
         height: 30px;
@@ -18,6 +22,6 @@
         transform: translate(-50%, 0);
         color: #0a5067;
         font-weight: 600;
+       }
     }
-    
 }

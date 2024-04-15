@@ -41,6 +41,9 @@
                 background-size: 100%;
                 background-repeat: no-repeat;
             &--red-drone{
+                &--text-hag{
+                    display:none;
+                }
                 padding-top: 72px;
                 margin-bottom: 30px;
                 height: 290px;
@@ -85,21 +88,60 @@
         
 }
 @media screen and (min-width:1000px) {
-    .section__wrapper--hag{
-        background-image: url("../../img/rectangle-top.svg");
-        background-size: 100px 277px;
+    .section{
+        &--saving{
+                background-image:url("../../img/rectangle-4.png");
+                background-repeat: no-repeat;
+                padding-bottom: 200px;
+                margin-top: 5px;
+                padding-top: 0px;
+                background-position: top;
+                background-size: 100%;
+            }
+       
+        }
+    }
+    .section__wrapper{
+        &--middle{
+            display: flex;
+            padding-top: 80px;
+        }
+        &--advantage{
+            background-size: 30%;
+            &--red-drone-prof{
+                background-size: 30%;
+            }
+        }
+        
+        &--hag{
+        // background-image: url("../../img/rectangle-top.svg");
+        background-size: 100% 277px;
+        max-width: 1040px;
+        margin-left: auto;
+        margin-right: auto;
         &--red-drone{
-            padding-top: 72px;
-            margin-bottom: 30px;
+            padding-top: 95px;
+            margin-bottom: 0px;
             height: 290px;
             background-image: url(../../img/red-dron.png);
-            background-size: 50%;
+            background-size: 45%;
             background-repeat: no-repeat;
             background-position: center;
-            background-position: 70% 205%;
+            background-position: 80% 80%;
             padding-bottom: 70px;
+            max-width: 1040px;
+            margin-left: auto;
+            margin-right: auto;
+            &--text-hag{
+                display: flex;
+                background-image: none;
+                margin-left: auto;
+                margin-right: auto;
             }
+        }
     }
-} 
+        
+    }
+
     
     

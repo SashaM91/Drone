@@ -5,5 +5,8 @@
     .backdrop{
         display: flex;
         flex-direction: row;
+        &__close{
+            display: none;
+        }
     }
 }

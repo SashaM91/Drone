@@ -45,3 +45,30 @@
     height: 295px;
    }
 }
+@media screen and (min-width:1000px){
+    .addition{
+        width: 1200px;
+        height: 320px;
+        &__banner{
+            background-position: 15% 75%;
+        }
+        &::before{
+            display: flex;
+            position: relative;
+            content: "";
+            transform: rotate(148grad);
+            background-color: #FFFFFF;
+            border: 70px solid;
+            border-color: rgba(0,0,0,0.3);
+            opacity: 20%;
+            width: 288px;
+            height: 288px;
+            left: 100px; 
+            top: 20px;
+            
+        }
+        &::after{
+            display: none;
+        }
+    }
+}

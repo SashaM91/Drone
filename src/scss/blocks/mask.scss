@@ -7,6 +7,7 @@
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     mask-position: 50% 50%;
+   
     &--dji{
         -webkit-mask-image: url(../../img/dji.svg);
         mask-image: url(../../img/dji.svg);
@@ -16,4 +17,11 @@
         mask-repeat: no-repeat;
         mask-position: center;
     }   
+}
+@media screen and (min-width:100px){
+    .mask{
+        padding-left: 100px;
+        mask-position: 100% 50%;
+    }
+ 
 }
