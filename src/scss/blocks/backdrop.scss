@@ -1,3 +1,9 @@
 .backdrop {
     display: none;
 }
+@media screen and (min-width:1000px) {
+    .backdrop{
+        display: flex;
+        flex-direction: row;
+    }
+}

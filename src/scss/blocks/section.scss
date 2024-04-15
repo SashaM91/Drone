@@ -81,8 +81,25 @@
             
         }
             
-            }    
+    }    
         
+}
+@media screen and (min-width:1000px) {
+    .section__wrapper--hag{
+        background-image: url("../../img/rectangle-top.svg");
+        background-size: 100px 277px;
+        &--red-drone{
+            padding-top: 72px;
+            margin-bottom: 30px;
+            height: 290px;
+            background-image: url(../../img/red-dron.png);
+            background-size: 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position: 70% 205%;
+            padding-bottom: 70px;
+            }
+    }
 } 
     
     

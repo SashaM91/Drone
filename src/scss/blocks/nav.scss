@@ -1,0 +1,31 @@
+.nav{
+    display: flex !important;
+    &__list{
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    min-width: 1000px;
+    align-self: start;
+
+    }
+    &__link{
+        color: white;
+        text-decoration: none !important;
+        padding-left: 20px;
+        padding-right: 20px;
+        vertical-align: middle;
+        &--current{
+            background-color: #FFEA30;
+            color: #0a5067;
+            padding-left: 35px;
+            padding-right: 35px;
+            padding-top: 24px;
+            padding-bottom: 10px;
+            // line-height: 5.5;
+           
+            text-decoration: none !important;
+
+        }
+    }
+}

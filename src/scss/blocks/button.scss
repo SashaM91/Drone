@@ -1,0 +1,23 @@
+.button{
+    width: 220px;
+    height: 58px;
+    background-color: #FFEA30;
+    border-radius: 36px;    
+    border:none;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    &-header{
+        width: 120px;
+        height: 30px;
+        background-color: #FFEA30;
+        border-radius: 36px;    
+        border:none;
+        position: relative;
+        left: 22%;
+        transform: translate(-50%, 0);
+        color: #0a5067;
+        font-weight: 600;
+    }
+    
+}

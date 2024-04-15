@@ -9,7 +9,7 @@
   
       &--center {
         align-items: center;
-        padding-bottom: 60px;
+        
       }
   
       &--dark {
@@ -24,4 +24,42 @@
     &__container {
       display: none;
     }
-  }
+    @media screen and (min-width: 1000px){
+      height: 200px;
+      &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-right: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        
+      }  
+      .header__container-svg{
+          display: flex;
+          justify-content: flex-start;
+          height: 30px;
+          margin-left: 35%;
+          margin-bottom: 15px;
+        }
+
+
+      &--dark {
+        background-color: #0a5067;
+        padding: 20px 20px;
+        height: 30px;
+        border-top: 10px solid blue;
+        margin-top: 10px;
+      }  
+        &--center {
+          align-items:start;
+         
+          max-width: 1140px;
+        }
+    
+        
+      }
+    }
+
+
+  
