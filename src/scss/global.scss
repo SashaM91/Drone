@@ -1,0 +1,15 @@
+$tablet: 768px;
+$desctop: 1024px;
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}

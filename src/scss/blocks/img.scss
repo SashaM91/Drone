@@ -1,0 +1,19 @@
+.img{
+    &__logo{
+        width: 345px;
+        height: 152px;
+        
+    &--padding{
+        padding-bottom: 50px;
+    &--dji-mask{
+        // width: 400px;
+        height: 152px;
+    }    
+    }    
+}
+    &__nature-bg{
+        background-image: url(../../img/nature-bg.png);
+        height: 200px;
+        width: 280px;
+    }   
+}
