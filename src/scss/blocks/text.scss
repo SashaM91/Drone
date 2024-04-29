@@ -5,6 +5,10 @@
   line-height: 24px;
   letter-spacing: 0em;
 
+  &--centered {
+    text-align: center;
+  }
+
   &__block-bold {
     font-size: 24px;
     font-weight: 500;

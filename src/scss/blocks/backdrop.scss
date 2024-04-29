@@ -1,8 +1,13 @@
-.backdrop {
+.menu-container {
     display: none;
+
+    &--open {
+        display: flex;
+        justify-content: center;
+    }
 }
 @media screen and (min-width:1000px) {
-    .backdrop{
+    .menu-container {
         display: flex;
         flex-direction: row;
         &__close{
