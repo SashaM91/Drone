@@ -1,18 +1,76 @@
 .text {
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-  
-    &__block-bold {
-      font-size: 24px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+
+  &__block-bold {
+    font-size: 24px;
+    font-weight: 500;
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  &--hag-bg:after {
+    position: relative;
+    content: 'xag';
+    font-family: "Roboto", sans-serif;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 112px;
+    text-transform: uppercase;
+    z-index: -1;
+    color: #F2F2F2;
+    top: 20px;
+    left: -120px;
+  }
+
+  &__banner-bold {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #fff;
+
+    padding-top: 40px;
+  }
+
+  &__bold {
+    font-weight: 700;
+    // display: flex;
+    // position: relative;
+  }
+
+  &--banner {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+  .text {
+    &--company {
+      width: 500px;
+    }
+
+    &__banner-bold {
+      font-size: 16px;
       font-weight: 500;
-      display: block;
-      padding-bottom: 10px;
-    }  
-    &--hag-bg:after{
-      position: relative ;
+      line-height: 30px;
+      color: #fff;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-top: 0px;
+    }
+
+    &__block-bold {
+      width: 500px;
+    }
+
+    &--hag-bg:after {
+      position: absolute;
       content: 'xag';
       font-family: "Roboto", sans-serif;
       font-size: 96px;
@@ -20,69 +78,12 @@
       font-weight: 500;
       line-height: 112px;
       text-transform: uppercase;
+      width: 300px;
       z-index: -1;
       color: #F2F2F2;
-      top: 20px;
-      left: -120px;
+      top: 245px;
+      left: 330px;
     }
-    
-    &__banner-bold {
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 30px;
-      color: #fff;
-      padding-left: 30px; 
-      padding-right: 30px;   
-      margin-top: -100px;
-    }
-  
-    &__bold {
-      font-weight: 700;
-      // display: flex;
-      // position: relative;
-    }
-  
-    &--banner {
-      font-size: 20px;
-      line-height: 30px;
-    }
-  
+
   }
-@media screen and (min-width: 1000px){
-      .text{
-        &--company{
-          width: 500px;
-        }
-        &__banner-bold {
-          font-size: 16px;
-          font-weight: 500;
-          line-height: 30px;
-          color: #fff;
-          padding-left: 30px; 
-          padding-right: 30px;    
-          margin-top:0px;
-        }
-        &__block-bold{
-          width: 500px;
-        } 
-        &--hag-bg:after{
-          position: absolute ;
-          content: 'xag';
-          font-family: "Roboto", sans-serif;
-          font-size: 96px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 112px;
-          text-transform: uppercase;
-          width: 300px;
-          z-index: -1;
-          color: #F2F2F2;
-          top: 545px;
-          left: 380px;
-      }
-
-    }
-    }
-
-    
-  
+}

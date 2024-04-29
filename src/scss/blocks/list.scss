@@ -1,24 +1,26 @@
+.list {
 
-
-
-.list{
-    
-    &--numbers{
+    &--numbers {
         list-style-type: none;
         padding: 20px 20px 0 20px;
-        list-style-position:inside;
+        list-style-position: inside;
         border: 1px solid #E0E0E0;
         height: 185px;
-        
-        
+
     }
-    &--marker{
+
+    &--top {
+        padding-top: 340px;
+    }
+
+    &--marker {
         list-style: none;
-        padding-top: 24px;
+        margin-top: 24px;
     }
-    &--marker::before{
+
+    &--marker::before {
         display: flex;
-        position:  relative;
+        position: relative;
         content: "";
         transform: rotate(43grad);
         background-color: #2A7AC0;
@@ -28,8 +30,9 @@
         top: 15px;
         border: 2px solid #b7d8ec;
     }
-    &--number{
-       
+
+    &--number {
+
         // @for $i from 1 to 5 {
         //     content: $int;
         //   }
@@ -41,62 +44,72 @@
         color: #2A7AC0;
         margin-top: 0px;
     }
-    &--ul{
-        padding-inline-start: 0!important;
-        // padding-inline-start: 15px;
-        // padding-inline-end: 15px;
+
+    &--ul {
+        padding-inline-start: 15px;
+        padding-inline-end: 15px;
     }
 
-    
+
 }
+
 @media screen and (min-width:1000px) {
-    .list{
-        &--ul{
+    .list {
+        &--ul {
+            max-width: 1040px;
             display: flex;
             flex-wrap: wrap;
+            margin-left: auto;
+            margin-right: auto;
             padding-bottom: 75px;
-            justify-content: center;
-            text-decoration: none;
-            padding-inline-start: 0!important;
-            list-style-type: none;
         }
-        &--numbers{
-            width: 33%;
-            height: auto;  
-            word-wrap: break-word;  
+
+        &--marker {
+            list-style: none;
+            padding-top: 24px;
+
         }
-        &--circle{
+
+        &--marker::before {
             display: flex;
-            flex-wrap: nowrap;
-            font-size: 16px;
             position: relative;
+            content: "";
+            transform: rotate(43grad);
+            background-color: #2A7AC0;
+            width: 8.49px;
+            height: 8.49px;
+            left: -25px;
+            top: 15px;
+            border: 2px solid #b7d8ec;
         }
-        
-        &--marker::before{
-            display: none;
-        }
-        &--top{
+
+
+
+        &--top {
             display: flex;
             flex-wrap: nowrap;
             justify-content: center;
             gap: 230px;
             padding-top: 72px;
         }
-        &--middle{
+
+        &--middle {
             display: flex;
             flex-wrap: nowrap;
             justify-content: center;
             gap: 400px;
             padding-top: 20px;
         }
-        &--bottom{
+
+        &--bottom {
             display: flex;
             flex-wrap: nowrap;
             justify-content: center;
             gap: 230px;
             padding-top: 20px;
         }
-        &--finish-li{
+
+        &--finish-li {
             display: flex;
             flex-wrap: wrap;
             padding-bottom: 75px;
@@ -105,14 +118,16 @@
             padding-inline-start: 0px;
             margin-left: 70px;
         }
-        &--box{
+
+        &--box {
             max-width: 30%;
             position: relative;
             text-align: end;
         }
-        &--box::before{
+
+        &--box::before {
             display: flex;
-            position:  absolute;
+            position: absolute;
             content: "";
             transform: rotate(43grad);
             background-color: #2A7AC0;
@@ -122,14 +137,15 @@
             top: 40px;
             border: 2px solid #b7d8ec;
         }
-        &--current{
-           list-style-type: none;
-           box-shadow: 5px 5px 20px #e5eaee;   
+
+        &--numbers {
+            width: 329px;
+            height: 185px;
+
+            &--current {
+                box-shadow: 5px 5px 20px #e5eaee;
+                width: 329px;
+            }
         }
-        &--marker{
-            list-style: none;
-            padding-top: 4px;
-            padding-inline-start:5px;
-        } 
     }
-} 
+}

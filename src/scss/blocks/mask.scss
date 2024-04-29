@@ -1,7 +1,12 @@
-.mask{
-   
-   
-    &--dji{
+.mask {
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+
+
+    &--dji {
         -webkit-mask-image: url(../../img/dji.svg);
         mask-image: url(../../img/dji.svg);
         -webkit-mask-size: 70%;
@@ -9,12 +14,14 @@
         -webkit-mask-repeat: no-repeat;
         mask-repeat: no-repeat;
         mask-position: center;
-    }   
+    }
 }
-@media screen and (min-width:1000px){
-    .mask{
+
+@media screen and (min-width:1000px) {
+    .mask {
         display: flex;
         align-items: center;
+        width: 350px;
     }
- 
+
 }

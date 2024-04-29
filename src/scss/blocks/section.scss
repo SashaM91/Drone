@@ -1,16 +1,42 @@
-.section{
-    &__wrapper{
+.section {
+    &--footer {
+        height: 600px;
+        width: auto;
+        background-color: #461e06;
+    }
+
+    &__padding {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    &--rectangle {
+        position: relative;
+        background: url('../../img/rectangle5.png') 50% 60%,
+            url('../../img/blue-mobile.png') 100% 100%;
+
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 1650px;
+
+
+        z-index: 1;
+    }
+
+    &__wrapper {
         margin-left: auto;
         margin-right: auto;
-        
-        &__article-img{
+
+        &--article-img {
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
             justify-content: center;
             align-content: center;
         }
-        &--saving{
+
+        &--saving {
             background-image: url("../../img/rectangle5.png");
             background-repeat: no-repeat;
             padding-bottom: 200px;
@@ -19,42 +45,67 @@
             background-position: center;
             background-size: 100%;
         }
-        &--bg{
+
+        &--bg {
             width: 375px;
             height: 300px;
             background-color: #2A7AC0;
         }
-        &__padding{
+
+        &__padding {
             position: relative;
             padding-bottom: 50px;
             margin-left: auto;
             margin-right: auto;
         }
 
-            
-        &--red-drone-prof{
+        &--red-drone::after {
+            position: absolute;
+            content: '';
+            background-image: url('../../img/red-dron.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            height: 150px;
+            width: 384px;
+            right: 0px;
+            top: 330px
+        }
+
+        // &--red-drone-prof {
+        //     padding-top: 100px;
+        //     height: 100px;
+        // }
+
+        &--red-drone-prof::after {
+            position: absolute;
+            content: '';
             background-image: url(../../img/red-drone-prof.png);
             background-size: 80%;
             background-repeat: no-repeat;
             background-position: center;
-            background-position: 50% 60%;
-            padding-bottom: 70px;  
-            height: 400px;
-            }
-            
-        &--advantage{
+            height: 150px;
+            width: 384px;
+            right: 20px;
+            top: 200px
+        }
+
+        &--advantage {
+            position: relative;
             background-image: url('../../img/ellipse.png');
             background-size: 60%;
             background-repeat: no-repeat;
             background-position: center;
             background-position: 50% 20%;
+            z-index: 1;
         }
-        &--hag{
+
+        &--hag {
             background-image: url("../../img/rectangle1.png");
             background-size: 100%;
             background-repeat: no-repeat;
         }
-        &--red-drone{
+
+        &--red-drone {
             padding-top: 72px;
             margin-bottom: 30px;
             height: 290px;
@@ -65,20 +116,23 @@
             // background-position: 70% 95%;
             padding-bottom: 70px;
         }
-        &--text-hag{
-            display:none;
+
+        &--text-hag {
+            display: none;
         }
-        &--black-drone{
+
+        &--black-drone {
             background-image: url(../../img/black-drone-prof.png);
             background-size: 80%;
             background-repeat: no-repeat;
             background-position: center;
             background-position: 80% 60%;
-            padding-bottom: 24px;  
+            padding-bottom: 24px;
             // width: 242px;
             height: 400px;
         }
-        &--black-drone:after{
+
+        &--black-drone:after {
             position: absolute;
             content: 'dji';
             font-family: "Roboto", sans-serif;
@@ -93,15 +147,18 @@
             left: 145px;
         }
     }
-        
+
 }
+
 @media screen and (min-width:1000px) {
-    .section{
+    .section {
         padding-left: 10%;
         padding-right: 10%;
         position: relative;
-        &--saving{
-             background-image:url("../../img/rectangle-4.png");
+
+
+        &--saving {
+            background-image: url("../../img/rectangle-4.png");
             background-repeat: no-repeat;
             padding-bottom: 100px;
             margin-top: 5px;
@@ -109,6 +166,7 @@
             background-position: top;
             background-size: 100%;
         }
+
         // &--bg{
         //     position: relative;
         //     width: 100%;
@@ -116,51 +174,58 @@
         //     background-color: #2A7AC0;
         //     z-index: 1;
         // }
-        &--rectangle{
+        &--rectangle {
             position: relative;
-            background: url('../../img/rectangle-5.png') 50% -200%  ,
-                               url('../../img/rectangle-blue.png') 50% 100%; 
-           
+            background: url('../../img/rectangle-5.png') 50% -200%,
+                url('../../img/rectangle-blue.png') 50% 100%;
+
             background-repeat: no-repeat;
-            
+            height: 950px;
+
             z-index: 1;
         }
-        &--footer{  
+
+        &--footer {
             height: 200px;
             width: auto;
             background-color: #461e06;
         }
-        
+
     }
 
-    
-    .section__wrapper{
+
+    .section__wrapper {
         margin-left: auto 20%;
         margin-right: auto;
         max-width: 1043px !important;
-        &__article-img{
+
+        &__article-img {
             display: flex;
             flex-direction: row;
             justify-content: space-between !important;
         }
-        &--middle{
+
+        &--middle {
             display: flex;
             padding-top: 80px;
             justify-content: space-between;
-            gap:40px;
+            gap: 40px;
         }
-        &--advantage{
+
+        &--advantage {
             position: relative;
             background-size: 30%;
             background-image: url('../../img/ellipse.png');
             background-repeat: no-repeat;
             background-position: center;
             background-position: 50% 35%;
-            &--red-drone-prof{
+
+            &--red-drone-prof {
                 background-size: 30%;
             }
         }
-        &--advantage::after{
+
+        &--advantage::after {
             position: absolute;
             content: '';
             background-image: url('../../img/red-drone-prof.png');
@@ -168,10 +233,11 @@
             background-repeat: no-repeat;
             height: 150px;
             width: 384px;
-            left: 220px;
-            top:270px
+            left: 320px;
+            top: 250px
         }
-        &__article-img{
+
+        &__article-img {
             display: flex;
             flex-wrap: nowrap;
             flex-direction: row;
@@ -179,13 +245,13 @@
             align-content: center;
             max-width: 1042px;
         }
-        
-        &--hag{
-        background-image:none;
-        
+
+        &--hag {
+            background-image: none;
+
         }
-        
-        &--red-drone{
+
+        &--red-drone {
             position: relative;
             padding-top: 95px;
             margin-bottom: 0px;
@@ -198,15 +264,16 @@
             // max-width: 1040px;
             // margin-left: auto;
             // margin-right: auto;
-            
-            &--text-hag{
+
+            &--text-hag {
                 display: flex;
                 background-image: none;
                 margin-left: auto;
                 margin-right: auto;
             }
         }
-        &--red-drone::after{
+
+        &--red-drone::after {
             position: absolute;
             content: '';
             background-image: url('../../img/red-dron.png');
@@ -215,12 +282,7 @@
             height: 150px;
             width: 384px;
             right: -30px;
-            top:70px
+            top: 70px
         }
     }
 }
-        
-    
-
-    
-    

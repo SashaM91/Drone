@@ -1,4 +1,4 @@
-.addition{
+.addition {
     background: linear-gradient(90deg, #2A7AC0 0.61%, #68A6DC 100%);
     position: relative;
     width: 335px;
@@ -6,46 +6,50 @@
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 100px;
-    &__bg{
+    // padding-left: 25px;
+    padding-right: 25px;
+
+    &__bg {
         background-image: none;
     }
-   
-    
-    // &::after{
-    //     display: flex;
-    //     position: relative;
-    //     content: "";
-    //     transform: rotate(145grad);
-    //     background-color: #FFFFFF;
-    //     opacity: 10%;
-    //     width: 288px;
-    //     height: 288px;
-    //     right: 55px;
-    //     bottom: 650px; 
-    // }
-    // &::before{
-    //     display: flex;
-    //     position: relative;
-    //     content: "";
-    //     transform: rotate(145grad);
-    //     background-color: #FFFFFF;
-    //     opacity: 20%;
-    //     width: 148px;
-    //     height: 148px;
-    //     left: 10px; 
-    //     top: 90px;
-    // }
-   &__banner{
-    background-image: url("../../img/black-drone.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: 15% 75%;
-    width: 345px;
-    height: 295px;
-   }
+
+    &::before {
+        display: flex;
+        position: absolute;
+        content: "";
+        transform: rotate(148grad);
+        background-color: #FFFFFF;
+        border: 70px solid;
+        border-color: rgba(0, 0, 0, 0.3);
+        opacity: 20%;
+        width: 288px;
+        height: 288px;
+        left: 0px;
+        top: -20px;
+    }
+
+    &__banner {
+        background-image: url("../../img/black-drone.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 15% 95%;
+        width: 345px;
+        height: 350px;
+    }
+
+    &__text {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        padding-left: 20px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        height: 300px;
+    }
 }
-@media screen and (min-width:1000px){
-    .addition{
+
+@media screen and (min-width:1000px) {
+    .addition {
         overflow: hidden;
         background: linear-gradient(90deg, #2A7AC0 0.61%, #68A6DC 100%);
         position: relative;
@@ -57,37 +61,41 @@
         margin-right: auto;
         padding-bottom: 100px;
         padding-bottom: 0px;
-        gap:100px;
-        &__bg{
+        gap: 100px;
+
+        &__bg {
             background-image: none;
         }
-        
-        &::before{
+
+        &::before {
             display: flex;
             position: absolute;
             content: "";
             transform: rotate(148grad);
             background-color: #FFFFFF;
             border: 70px solid;
-            border-color: rgba(0,0,0,0.3);
+            border-color: rgba(0, 0, 0, 0.3);
             opacity: 20%;
             width: 288px;
             height: 288px;
-            left: 0px; 
+            left: 0px;
             top: -20px;
         }
-        &::after{
+
+        &::after {
             display: none;
         }
-        &__banner{
+
+        &__banner {
             background-image: none;
         }
-        &__banner::after{
+
+        &__banner::after {
             position: absolute;
             content: "";
             width: 550px;
             height: 250px;
-            left: 300px; 
+            left: 500px;
             top: -30px;
             background-image: url("../../img/black-drone.png");
             background-size: 80%;
@@ -95,7 +103,8 @@
             background-position: 90% 100%;
 
         }
-        &__text{
+
+        &__text {
             display: flex;
             flex-wrap: wrap;
             width: 65%;
@@ -105,4 +114,4 @@
             height: 300px;
         }
     }
-    }
+}

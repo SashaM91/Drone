@@ -13,20 +13,25 @@
         padding-top: 18px;
     }
 
+    &--drone-img {
+        height: 5px;
+        padding-bottom: 200px;
+    }
+
     &--center {
         position: relative;
         text-align: center;
-        &--padding{
+
+        &--padding {
             position: absolute;
-           padding: 60px; 
-           margin-bottom: 50px;
+            padding: 60px;
+            margin-bottom: 50px;
         }
     }
-    
 
-    &--left{
+
+    &--left {
         text-align: left;
         padding-left: 10px;
     }
 }
-  
